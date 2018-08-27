@@ -11,15 +11,16 @@ import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import net.thucydides.core.annotations.Managed;
 import net.thucydides.core.annotations.Steps;
-import tasks.LoadList;
+import tasks.LoadListFromDB;
 import tasks.OpenFacebook;
-import tasks.SearchProfiles;
+import tasks.SearchProfilesByName;
+import tasks.TypeAcountInformation;
 
 import static net.serenitybdd.screenplay.EventualConsequence.eventually;
 import static net.serenitybdd.screenplay.GivenWhenThen.*;
 import static org.hamcrest.Matchers.comparesEqualTo;
 
-public class StepDefinitions {
+public class SearchStepDefinitions {
 	
 	@Managed(driver="chrome")
 	private WebDriver herBrowser;
@@ -28,7 +29,9 @@ public class StepDefinitions {
 	@Steps
 	OpenFacebook openFacebookPage;
 	@Steps
-	LoadList haveAListOfNames;
+	LoadListFromDB haveAListOfNames;
+	@Steps
+	TypeAcountInformation login;
 	
 	
 	@Before
@@ -39,11 +42,13 @@ public class StepDefinitions {
 	@Given("that the user opened her facebook account")
 	public void thatTheUserOpenedHerFacebookAccount() {		
 		givenThat(felipito).wasAbleTo(openFacebookPage);
+		givenThat(felipito).wasAbleTo(login);
+		
 	}
 	
 	@When("he searches for '(.*)' on fb")
 	public void sheSearchesForTheNamesOnFb(String name) {
-		when(felipito).attemptsTo(SearchProfiles.search(name));
+		when(felipito).attemptsTo(SearchProfilesByName.search(name));
 	}
 	
 	@Then("he should find the profiles")

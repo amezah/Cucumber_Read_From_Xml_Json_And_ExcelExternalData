@@ -7,6 +7,8 @@ import model.Perfil;
 public class ListaNombres {
 	
 	public static ArrayList<Perfil> lista;
+	public static ArrayList<String> listaXml;
+	public static ArrayList<String> listaJson;
 	
 	public static int numberOfSearchedProfiles() {
 		int f = lista.size();

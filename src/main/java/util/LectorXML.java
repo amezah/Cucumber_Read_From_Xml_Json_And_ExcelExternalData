@@ -35,7 +35,5 @@ public class LectorXML {
 		}
 		
 		return lista;
-
 	}
-
 }

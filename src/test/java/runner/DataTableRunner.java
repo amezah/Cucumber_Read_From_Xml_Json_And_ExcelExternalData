@@ -7,11 +7,11 @@ import net.serenitybdd.cucumber.CucumberWithSerenity;
 
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(
-		features = "test.features/Login.feature",
+		features = "test.features/searchfromjson.feature",
 		glue = {"step_definitions"}
 )
 
 public class DataTableRunner {
-
+	
 }
 

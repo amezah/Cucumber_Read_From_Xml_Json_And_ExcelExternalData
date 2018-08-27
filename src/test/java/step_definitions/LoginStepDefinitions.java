@@ -16,7 +16,7 @@ import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import net.thucydides.core.annotations.Managed;
 import net.thucydides.core.annotations.Steps;
 import tasks.OpenFacebook;
-import tasks.SearchProfiles;
+import tasks.SearchProfilesByName;
 import tasks.TypeAcountInformation;
 
 import static net.serenitybdd.screenplay.GivenWhenThen.*;

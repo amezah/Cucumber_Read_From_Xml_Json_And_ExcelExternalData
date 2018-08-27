@@ -13,12 +13,12 @@ import net.serenitybdd.screenplay.actions.Enter;
 import util.ListaNombres;
 import util.PerfilCRUD;
 
-public class SearchProfiles implements Task{
+public class SearchProfilesByName implements Task{
 	
 	FacebookMainPage fmp;
 	String name;
 	
-	public SearchProfiles(String name) {
+	public SearchProfilesByName(String name) {
 		this.name = name;
 	}
 	
@@ -35,9 +35,9 @@ public class SearchProfiles implements Task{
 			
 	}
 
-	public static SearchProfiles search(String name) {
+	public static SearchProfilesByName search(String name) {
 		
-		return Tasks.instrumented(SearchProfiles.class, name);
+		return Tasks.instrumented(SearchProfilesByName.class, name);
 	}
 
 }
