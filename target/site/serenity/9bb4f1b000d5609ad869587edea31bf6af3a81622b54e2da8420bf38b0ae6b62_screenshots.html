@@ -1,0 +1,240 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+<!--[if IE 7]>
+<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">
+<![endif]--><!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><!-- Bootstrap -->
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script><link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname"></span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="46f1d30b007c5d307bc2c8c6d7317b125dcac7c4b2d4dd8612d67b4db9c92593.html">Search Profile</a></span>
+                > <span class="truncate-60"><a
+                    href="9bb4f1b000d5609ad869587edea31bf6af3a81622b54e2da8420bf38b0ae6b62.html">Search the profiles in the list personas </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 23-08-2018 14:35</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fa fa-2x fa-comments-o"></i>
+                                    <span class="story-header-title">Search Profile</span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                <pre><code>As a Facebook user
+I want to search profiles 
+to find my friends
+</code></pre>
+
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><i class='fa fa-check-square-o success-icon fa-2x' title='SUCCESS'></i></span>
+                            <span class="test-case-title">
+                                <span class="success-color">Search the profiles in the list personas
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+    <div class="story-title">
+        <h3>Scenario:</h3>
+        <div class="scenario">Given that the user opened her facebook account<br>When he searches for '&lt;name&gt;' on fb<br>Then he should find the profiles</div>
+    </div>
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="44a713f32ed515df0f78a1756c76519ef27059084acf709472e44562f67dcdaa.png" title="Search the profiles in the list personas #1: {name=Sebastian Baron}" width="1034"/>
+                <img src="066d60fa0ab209f75c72bfa1a0546fb595303a9eaf45830f2f30800d702c15cc.png" title="Given that the user opened her facebook account" width="1034"/>
+                <img src="686e0af0f4791a7342e783fcee66a748a0c9c77bd055a6f739fcfc8d206e5909.png" title="Felipito opens the Facebook login page" width="1034"/>
+                <img src="bf8bc62925b870f4641f55ddadd827ecafa13eed5600c7549c467567b8d3935b.png" title="Felipito enters 'masterkool04@hotmail.com' into Campo Usuario" width="1034"/>
+                <img src="3555c63e8e5d92126da35d76e5b6e35e495794f9b740b69c296797e7880187d9.png" title="Felipito enters 'masterkool04@hotmail.com' into Campo Usuario" width="1034"/>
+                <img src="f15f9728089295a13b7b8d0b5c17388fd3005ab64195dee6761262f9efce33b6.png" title="Felipito enters 'fbpassw0*' into Campo Contrase&ntilde;a" width="1034"/>
+                <img src="958eb8a541b03fa132f68fed1da2c25e9b239d227a8d67acc8fe8c9b725db115.png" title="Felipito enters 'fbpassw0*' into Campo Contrase&ntilde;a" width="1034"/>
+                <img src="c4ac366c68b2ffb14e2d7beb43a8952faf3a14041333de9f0ff9d21043217f51.png" title="Felipito clicks on Boton Iniciar Sesion" width="1034"/>
+                <img src="066d60fa0ab209f75c72bfa1a0546fb595303a9eaf45830f2f30800d702c15cc.png" title="Felipito clicks on Boton Iniciar Sesion" width="1034"/>
+                <img src="066d60fa0ab209f75c72bfa1a0546fb595303a9eaf45830f2f30800d702c15cc.png" title="When he searches for 'Sebastian Baron' on fb" width="1034"/>
+                <img src="e547cad1ad79c4be83ddd1797a4dcce6ea2b7cfcbd39831433aa9f1864838d4b.png" title="When he searches for 'Sebastian Baron' on fb" width="1034"/>
+                <img src="f7f64c2c862bdeeb1c5b682362918ece0920be4bb63d2ded00ad29679136b49f.png" title="Felipito enters 'Sebastian Baron' into Barra Busqueda" width="1034"/>
+                <img src="33d4135933e49466bee0c51111d5b06fe81316e634ea95a5e8ff99ab9b4b25ce.png" title="Felipito enters 'Sebastian Baron' into Barra Busqueda" width="1034"/>
+                <img src="de80d6aa41c4ff15cd094e73ecb69128e219d3dac431f90bbf98f5907fbf5665.png" title="Felipito clicks on Boton Busqueda" width="1034"/>
+                <img src="a9b643ae3078cf7e886ae21cf891829c3dd90f79b04e51fdd2c579dddb8f75e2.png" title="Felipito clicks on Boton Busqueda" width="1034"/>
+                <img src="2409bd22a97e77eccea9cb3f1aa0a26bf29fadb530bfd44c33e4cf100c6c5c82.png" title="Felipito clicks on Resultado" width="1034"/>
+                <img src="201840d9c02dc1f46e4fc72f8c5c51c5f3154744b465cabcbbd7e05c376bd643.png" title="Felipito clicks on Resultado" width="1034"/>
+                <img src="44a713f32ed515df0f78a1756c76519ef27059084acf709472e44562f67dcdaa.png" title="Then he should find the profiles" width="1034"/>
+                <img src="43555bcdc66ef1c11712d5ca666c81429a1c2349d0bde56d89ca93878d0f362c.png" title="Search the profiles in the list personas #2: {name=Luis Carlos Covilla}" width="1034"/>
+                <img src="ac0132d91ea403782144600d5c36b0d58551cede0391e227bdbcffa67239f6a1.png" title="Given that the user opened her facebook account" width="1034"/>
+                <img src="bf8bc62925b870f4641f55ddadd827ecafa13eed5600c7549c467567b8d3935b.png" title="Felipito opens the Facebook login page" width="1034"/>
+                <img src="686e0af0f4791a7342e783fcee66a748a0c9c77bd055a6f739fcfc8d206e5909.png" title="Felipito enters 'masterkool04@hotmail.com' into Campo Usuario" width="1034"/>
+                <img src="3555c63e8e5d92126da35d76e5b6e35e495794f9b740b69c296797e7880187d9.png" title="Felipito enters 'masterkool04@hotmail.com' into Campo Usuario" width="1034"/>
+                <img src="f15f9728089295a13b7b8d0b5c17388fd3005ab64195dee6761262f9efce33b6.png" title="Felipito enters 'fbpassw0*' into Campo Contrase&ntilde;a" width="1034"/>
+                <img src="958eb8a541b03fa132f68fed1da2c25e9b239d227a8d67acc8fe8c9b725db115.png" title="Felipito enters 'fbpassw0*' into Campo Contrase&ntilde;a" width="1034"/>
+                <img src="c4ac366c68b2ffb14e2d7beb43a8952faf3a14041333de9f0ff9d21043217f51.png" title="Felipito clicks on Boton Iniciar Sesion" width="1034"/>
+                <img src="ac0132d91ea403782144600d5c36b0d58551cede0391e227bdbcffa67239f6a1.png" title="Felipito clicks on Boton Iniciar Sesion" width="1034"/>
+                <img src="ac0132d91ea403782144600d5c36b0d58551cede0391e227bdbcffa67239f6a1.png" title="When he searches for 'Luis Carlos Covilla' on fb" width="1034"/>
+                <img src="35de2ba17af1a9b58956d42948484dd9c87935440c0c608d055ec0d9332aae4e.png" title="When he searches for 'Luis Carlos Covilla' on fb" width="1034"/>
+                <img src="8a467cc0c98e9ea31469c6e4730b7652bfa6fb1e2d5d69ed8feac4fad44f2b4e.png" title="Felipito enters 'Luis Carlos Covilla' into Barra Busqueda" width="1034"/>
+                <img src="e40eabfdc9b378de47e55a7cdf768f39650e4ba80c62bab8cd02685a60599827.png" title="Felipito enters 'Luis Carlos Covilla' into Barra Busqueda" width="1034"/>
+                <img src="b5e6898bc205c0b32c9042e84f5e7949bd2061cb8a34896f4a0a741588e5e815.png" title="Felipito clicks on Boton Busqueda" width="1034"/>
+                <img src="cb3579e0d3cd869b9550a5d5b09091d71dae368f444c412d66ae38cf7c33c41c.png" title="Felipito clicks on Boton Busqueda" width="1034"/>
+                <img src="ba91cf5d5201ba1b4ab2e17be1b8a16afed7057c24787a182120b893dd0213be.png" title="Felipito clicks on Resultado" width="1034"/>
+                <img src="1f4c71e39cd472c6ed6ae32880eb03c13fee468b46cf8b11c94a33ec1233f24e.png" title="Felipito clicks on Resultado" width="1034"/>
+                <img src="43555bcdc66ef1c11712d5ca666c81429a1c2349d0bde56d89ca93878d0f362c.png" title="Then he should find the profiles" width="1034"/>
+                <img src="3e6afc978161ff9fdc1a2a790f457f9308f17ab1bab821e276f4fa025a11984d.png" title="Search the profiles in the list personas #3: {name=Fernando Castilla}" width="1034"/>
+                <img src="2201a31d1e2496634c418f97010a23f7f49b574825ba72bd9692b3e7ea3cf857.png" title="Given that the user opened her facebook account" width="1034"/>
+                <img src="bf8bc62925b870f4641f55ddadd827ecafa13eed5600c7549c467567b8d3935b.png" title="Felipito opens the Facebook login page" width="1034"/>
+                <img src="686e0af0f4791a7342e783fcee66a748a0c9c77bd055a6f739fcfc8d206e5909.png" title="Felipito enters 'masterkool04@hotmail.com' into Campo Usuario" width="1034"/>
+                <img src="3555c63e8e5d92126da35d76e5b6e35e495794f9b740b69c296797e7880187d9.png" title="Felipito enters 'masterkool04@hotmail.com' into Campo Usuario" width="1034"/>
+                <img src="f15f9728089295a13b7b8d0b5c17388fd3005ab64195dee6761262f9efce33b6.png" title="Felipito enters 'fbpassw0*' into Campo Contrase&ntilde;a" width="1034"/>
+                <img src="958eb8a541b03fa132f68fed1da2c25e9b239d227a8d67acc8fe8c9b725db115.png" title="Felipito enters 'fbpassw0*' into Campo Contrase&ntilde;a" width="1034"/>
+                <img src="c4ac366c68b2ffb14e2d7beb43a8952faf3a14041333de9f0ff9d21043217f51.png" title="Felipito clicks on Boton Iniciar Sesion" width="1034"/>
+                <img src="2201a31d1e2496634c418f97010a23f7f49b574825ba72bd9692b3e7ea3cf857.png" title="Felipito clicks on Boton Iniciar Sesion" width="1034"/>
+                <img src="2201a31d1e2496634c418f97010a23f7f49b574825ba72bd9692b3e7ea3cf857.png" title="When he searches for 'Fernando Castilla' on fb" width="1034"/>
+                <img src="1f71df1ee71c3fc8830a749a3ec8b75d41ffea94e09a1d9d2b32c450b1c5a928.png" title="When he searches for 'Fernando Castilla' on fb" width="1034"/>
+                <img src="386041bb5e2da4edc233eb175915f6b534f54ffeb96e7ff5d0be882f486c9286.png" title="Felipito enters 'Fernando Castilla' into Barra Busqueda" width="1034"/>
+                <img src="7fabf4bdbc8a648b8fa5a2ae05ab57f65d0ba5fc647d3ced8e475fa2be23707c.png" title="Felipito enters 'Fernando Castilla' into Barra Busqueda" width="1034"/>
+                <img src="fa686dda580ead3d35fd66cda889d7fcbaf08e8ae5db525a1a8aac4af9413f32.png" title="Felipito clicks on Boton Busqueda" width="1034"/>
+                <img src="d7f56183762aa43b1071597c1d01c4488fc3447d1fbc7bafa20ed3bbe7b6cdcd.png" title="Felipito clicks on Boton Busqueda" width="1034"/>
+                <img src="1fe42a8436e97feed78715eff2a7c2aad94275f0c456b594505eb033bbc936d6.png" title="Felipito clicks on Resultado" width="1034"/>
+                <img src="5a46a661b3cec8dc56320e082202d5ea915d643aba08c68de25f21a3559ebcc4.png" title="Felipito clicks on Resultado" width="1034"/>
+                <img src="3e6afc978161ff9fdc1a2a790f457f9308f17ab1bab821e276f4fa025a11984d.png" title="Then he should find the profiles: <span class='success-color'>SUCCESS</span>" width="1034"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 1.9.9</span>
+</div>
+</body>
+</html>
