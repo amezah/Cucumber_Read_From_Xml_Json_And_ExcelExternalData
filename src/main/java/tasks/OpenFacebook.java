@@ -20,5 +20,9 @@ public class OpenFacebook implements Task{
 	        );
 	}	
 	
+	public static OpenFacebook open() {
+		return Tasks.instrumented(OpenFacebook.class);
+	}
+	
 
 }
